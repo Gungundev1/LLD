@@ -5,30 +5,29 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
-        Cake cake = new Cake();
         Scanner scanner = new Scanner(System.in);
+        CakeBuilder builder = new CakeBuilder();
 
-        System.out.println("\nEnter the type of bread(e.g. White bread, Brown bread, sponge bread, chocolate bread):");
-        String breadType = scanner.next();
-        cake.prepareBread(breadType);
+        System.out.println("\nEnter the type of bread (e.g. White bread, Brown bread, Sponge bread, Chocolate bread):");
+        String breadType = scanner.nextLine();
+        builder.setBreadType(breadType);
 
-        System.out.println("\nEnter the type of cream(e.g. chocolate , vanilla and more)");
-        String creamFlavour = scanner.next();
-        cake.addCream(creamFlavour);
+        System.out.println("\nEnter the type of cream (e.g. Chocolate, Vanilla, Strawberry):");
+        String creamFlavour = scanner.nextLine();
+        builder.setCreamFlavour(creamFlavour);
 
-        System.out.println("\nEnter the baking time: ");
+        System.out.println("\nEnter the baking time in minutes:");
         int bakeTime = scanner.nextInt();
-        cake.bakeCake(bakeTime);
+        scanner.nextLine(); // consume newline
+        builder.setBakeTime(bakeTime);
 
-        System.out.println("\nEnter the type of decoration(e.g. fruits, designs ");
-        String decorateType = scanner.next();
-        cake.decorate(decorateType);
-        System.out.println("\nThe cake is ready for served!");
+        System.out.println("\nEnter the type of decoration (e.g. Fruits, Designs):");
+        String decorateType = scanner.nextLine();
+        builder.setDecorateType(decorateType);
+
+        Cake cake = builder.build();
+        cake.displayCake();
+
         scanner.close();
-
-
-    }
 }
-
-
+}

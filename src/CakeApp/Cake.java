@@ -1,32 +1,24 @@
 package CakeApp;
 
-import java.lang.String;
-import java.util.Scanner;
-
 public class Cake {
+    private final String breadType;
+    private final String creamFlavour;
+    private final String decorateType;
+    private final int bakeTime;
 
-    private  String breadType;
-    private  String creamFlavour;
-    private  String decorateType;
-    private int bakeTime ;
-    public   void prepareBread(String breadType) {
-        System.out.println("Preparing: " + breadType + " bread....");
+    public Cake(String breadType, String creamFlavour, String decorateType, int bakeTime) {
+        this.breadType = breadType;
+        this.creamFlavour = creamFlavour;
+        this.decorateType = decorateType;
+        this.bakeTime = bakeTime;
     }
 
-    public void addCream(String creamFlavour) {
-        System.out.println("Adding " + creamFlavour + " on the bread...");
-    }
-
-    public void bakeCake(int bakeTime) {
-        System.out.println("Baking the cake for " + bakeTime + " minutes...");
-    }
-
-    public void decorate(String decorateType) {
-        System.out.println("Decorating the cake with " + decorateType + "...");
-    }
-
-    public void serveCake() {
-        System.out.println("The cake is ready for served!");
-    }
+    public void displayCake() {
+        System.out.println("Cake Details:");
+        System.out.println("Bread Type: " + breadType);
+        System.out.println("Cream Flavour: " + creamFlavour);
+        System.out.println("Decoration: " + decorateType);
+        System.out.println("Baking Time: " + bakeTime + " minutes");
+        System.out.println("The cake is ready to be served!");
 }
-
+}
