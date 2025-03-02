@@ -24,8 +24,8 @@ public class Main {
         System.out.println("\nEnter the type of decoration (e.g. Fruits, Designs):");
         String decorateType = scanner.nextLine();
         builder.setDecorateType(decorateType);
-Cake cake =new Cake(breadType,creamFlavour,decorateType,bakeTime);
-
+        Cake cake =new Cake(breadType,creamFlavour,decorateType,bakeTime);
+        builder.build();
         cake.displayCake();
 
         scanner.close();

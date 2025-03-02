@@ -14,11 +14,11 @@ public class Cake {
     }
 
     public void displayCake() {
-        System.out.println("Cake Details:");
+        System.out.println("\nCake Details:");
         System.out.println("Bread Type: " + breadType);
         System.out.println("Cream Flavour: " + creamFlavour);
         System.out.println("Decoration: " + decorateType);
         System.out.println("Baking Time: " + bakeTime + " minutes");
-        System.out.println("The cake is ready to be served!");
+        System.out.println("\nThe cake is ready to be served!");
 }
 }
