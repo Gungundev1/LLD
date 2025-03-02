@@ -27,7 +27,7 @@ public class Main {
 Cake cake =new Cake(breadType,creamFlavour,decorateType,bakeTime);
 
         cake.displayCake();
-      builder.build();
+
         scanner.close();
 }
 }

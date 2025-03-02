@@ -26,7 +26,5 @@ public class CakeBuilder {
         return this;
     }
 
-    public Cake build() {
-        return new Cake(breadType, creamFlavour, decorateType, bakeTime);
-}
+
 }
