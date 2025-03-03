@@ -1,32 +1,29 @@
 package CakeApp;
 
-public class CakeBuilder {
-    private String breadType;
-    private String creamFlavour;
-    private String decorateType;
-    private int bakeTime;
-
-    public CakeBuilder setBreadType(String breadType) {
-        this.breadType = breadType;
+public  class CakeBuilder {
+    private final Cake cake;
+    public CakeBuilder(){
+        this.cake=new Cake();
+    }
+    public CakeBuilder addBreadTYpe(String breadType){
+        cake.setBread(breadType);
+        return this;
+    }
+    public CakeBuilder addCreamFlavour(String creamFlavour){
+        cake.addCreamFlavour(creamFlavour);
+        return this;
+    }
+    public CakeBuilder addDecorationType(String decorateType){
+        cake.addDecorationType(decorateType);
+        return this;
+    }
+    public CakeBuilder takeBakeTime(int bakeType){
+        cake.takeBakeTime(bakeType);
         return this;
     }
 
-    public CakeBuilder setCreamFlavour(String creamFlavour) {
-        this.creamFlavour = creamFlavour;
-        return this;
-    }
-
-    public CakeBuilder setDecorateType(String decorateType) {
-        this.decorateType = decorateType;
-        return this;
-    }
-
-    public CakeBuilder setBakeTime(int bakeTime) {
-        this.bakeTime = bakeTime;
-        return this;
-    }
   public Cake build(){
-    return new Cake(breadType,creamFlavour,decorateType,bakeTime);
+        return cake;
   }
 
 }
