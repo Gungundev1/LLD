@@ -22,10 +22,10 @@ public class Cake {
         this.bakeTime=bakeTime;
     }
 
-//@Override
-//public String toString(){
-//        return "cake Details:" + "\nBreadType-" +breadType +"\n creamflavour-"+ creamFlavour+"\nDecorationTYpe- "+ decorateType+"\nBakeTime-"+bakeTime+"";
-//}
+@Override
+public String toString(){
+       return "cake Details:" + "\nBreadType-" +breadType +"\n creamflavour-"+ creamFlavour+"\nDecorationTYpe- "+ decorateType+"\nBakeTime-"+bakeTime+"";
+}
     public void displayCake() {
         System.out.println("Cake Details:");
         System.out.println("Bread Type: " + breadType);
