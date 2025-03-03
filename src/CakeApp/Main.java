@@ -11,20 +11,20 @@ public class Main {
 
         System.out.println("\nEnter the type of bread (e.g. White bread, Brown bread, Sponge bread, Chocolate bread):");
         String breadType = scanner.nextLine();
-//        cake.setBread(breadType);
+        cake.setBreadType(breadType);
 
         System.out.println("\nEnter the type of cream (e.g. Chocolate, Vanilla, Strawberry):");
         String creamFlavour = scanner.nextLine();
-        cake.addCreamFlavour(creamFlavour);
+        cake.setCreamFlavour(creamFlavour);
 
         System.out.println("\nEnter the baking time in minutes:");
         int bakeTime = scanner.nextInt();
         scanner.nextLine();
-        cake.takeBakeTime(bakeTime);
+        cake.setBakeTime(bakeTime);
 
         System.out.println("\nEnter the type of decoration (e.g. Fruits, Designs):");
         String decorateType = scanner.nextLine();
-        cake.addDecorationType(decorateType);
+//        cake.setDecorateType(decorateType);
         System.out.println("The cake is ready to be served!");
 
 

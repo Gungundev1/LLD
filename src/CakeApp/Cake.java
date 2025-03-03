@@ -1,24 +1,24 @@
 package CakeApp;
 
 public class Cake {
-    private    String breadType;
+    private  String breadType;
     private  String creamFlavour;
     private  String decorateType;
     private int bakeTime;
 
     public Cake() {}
 
-    public void setBread(String breadType){
+    public void setBreadType(String breadType){
         this.breadType=breadType;
     }
 
-    public void addCreamFlavour(String creamFlavour){
+    public void setCreamFlavour(String creamFlavour){
         this.creamFlavour=creamFlavour;
     }
-    public void addDecorationType(String decorateType){
+    public void setDecorateType(String decorateType){
         this.decorateType=decorateType;
     }
-    public void takeBakeTime(int bakeTime){
+    public void setBakeTime(int bakeTime){
         this.bakeTime=bakeTime;
     }
 
@@ -32,7 +32,6 @@ public class Cake {
         System.out.println("Cream Flavour: " + creamFlavour);
         System.out.println("Decoration: " + decorateType);
         System.out.println("Baking Time: " + bakeTime + " minutes");
-        System.out.println("The cake is ready to be served!");
 }
 
 
