@@ -18,10 +18,19 @@ public class Cake {
 
 @Override
 public String toString(){
-        return "cake Details:" + "\nBreadType-" +breadType +"\n creamflavour-"+ creamFlavour+"\nDecorationTYpe- "+ decorateType+"\nBakeTime-"+bakeTime+"";
+
+        return "cake Details:" + "\nBreadType- " +breadType +"\ncreamflavour- "+ creamFlavour+"\nDecorationType- "+ decorateType+"\nBakeTime- "+bakeTime;
+
+}
+
+
 }
 
 
 
 
-}
+
+
+
+
+
