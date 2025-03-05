@@ -21,14 +21,4 @@ public String getAuthor(){
 public int getPrice(){
       return price;
 }
-    public static void main(String[] args) {
-        Book book =new Book("Gitanjali","Rabindranath Tagore",200);
-//        Scanner scanner=new Scanner(System.in);
-//        book.title=scanner.next();
-//        book.author=scanner.next();
-//        book.price=scanner.nextInt();
-
-        BookDisplayInfo.displayInfo(book);
-        BookSaveDetails.saveDetails(book);
-    }
 }
