@@ -1,4 +1,4 @@
-package CakeApp;
+package CreationalDesignPattern.Builder;
 
 public  class CakeBuilder {
 
@@ -6,12 +6,11 @@ public  class CakeBuilder {
     private String creamFlavour;
     private String decorateType;
     private int bakeTime;
-    private  Cake cake;
-    public CakeBuilder(){
-    }
-    public CakeBuilder setBreadType(String breadType){
+
+Cake cake=new Cake();
+
+    public void setBreadType(String breadType){
         this.breadType=breadType;
-        return this;
     }
     public CakeBuilder setCreamFlavour(String creamFlavour){
         this.creamFlavour=creamFlavour;
@@ -26,11 +25,13 @@ public  class CakeBuilder {
         return this;
     }
 
+
   public Cake build(){
 
-        return new Cake(
-                breadType,creamFlavour,decorateType,bakeTime
-        );
+   return cake;
+//                breadType,creamFlavour,decorateType,bakeTime
+
   }
+
 
 }
