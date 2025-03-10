@@ -1,7 +1,7 @@
 package StructuralDesignPattern.Adapter;
 
 public class TypeCAdapter implements TypeCPhone{
-    private USBCharger usbCharger;
+    private final USBCharger usbCharger;
     public TypeCAdapter(USBCharger usbCharger){
      this.usbCharger=usbCharger;
     }
